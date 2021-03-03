@@ -1,0 +1,24 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Data Vencimento</th>
+            <th>Fornecedor</th>
+            <th>Valor</th>
+            <th>Dias em Atraso</th>
+            <th>Valor Corrigido</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of ContasPagasList">
+            <td>{{dataItem.id}}</td>
+            <td>{{dataItem.nome}}</td>
+            <td>{{dataItem.dataVencimento}}</td>
+            <td>{{dataItem.fornecedor.nome}}</td>
+            <td>{{dataItem.valorOriginal | number : '1.2-2'}}</td>
+            <td>{{dataItem.diasEmAtraso}}</td>
+            <td>{{dataItem.valorCorrigido | number : '1.2-2'}}</td>
+        </tr>
+    </tbody>
+</table>

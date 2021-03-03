@@ -1,0 +1,74 @@
+
+
+<div class="">
+    <div class="">
+      <div class="col-12 stretch-card">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Pagamento</h4>
+            <p class="card-description"> Valores Atualizados </p>
+            <form class="forms-sample">
+
+                <div class="form-group row">
+                <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Nome</label>
+                <div class="col-sm-9">
+                  <label type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">{{model.nome}}</label>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Valor</label>
+                <div class="col-sm-9">
+                  <label type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">{{model.valorOriginal}}</label>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Vencimento</label>
+                <div class="col-sm-9">
+                  <label type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">{{model.dataVencimento}}</label>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Pagamento</label>
+                <div class="col-sm-9">
+                  <label type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">{{model.dataPagamento}}</label>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Dias Em Atraso</label>
+                <div class="col-sm-9">
+                  <label type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email"> {{model.diasEmAtraso}}</label>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Valor Corrigido</label>
+                <div class="col-sm-9">
+                  <label type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">{{model.valorCorrigido}} </label>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Fornecedor</label>
+                <div class="col-sm-9">
+                  <label type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">{{model.fornecedor.nome}}</label>
+                </div>
+              </div>
+
+
+
+            <br>
+
+
+
+              <button (click)="addContaPagar()" type="submit" class="btn btn-success mr-2">Pagar</button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,51 @@
+
+<div class="main-panel">
+    <div class="">
+      <div class="row">
+
+        <div class="">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Conta a Pagar</h4>
+              <p class="card-description"> {{cabecalho}}</p>
+              <form class="forms-sample">
+                <div class="form-group">
+                    <label for="exampleInputName1">Name</label>
+                    <input class="form-control" placeholder="Name" type="text" id="name" [(ngModel)]="model.nome" name="name">
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 col-form-label">Datata de Vencimento</label>
+                    <div class="col-sm-9">
+                      <input class="form-control" placeholder="dd-mm-yyyy" type="text" id="dataVencimento" [(ngModel)]="model.dataVencimento" name="dataVencimento" />
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="exampleInputName1">Valor</label>
+                    <input class="form-control" placeholder="Valor" type="text" id="valorOriginal" [(ngModel)]="model.valorOriginal" name="valorOriginal">
+                </div>
+                  
+                <div class="form-group">
+                    <label for="exampleInputName1">Fornecedor</label>
+                    <select class="form-control" id="idfornecedor" [(ngModel)]="model.idfornecedor" name="idfornecedor">
+                        <option *ngFor="let fornecedor of ContasPagasList" value= {{fornecedor.id}}>
+                        {{fornecedor.nome}}
+                        </option>
+                    </select>
+                </div>
+
+                  <br>
+
+
+                <button (click)="addContaPagar()"  type="submit" class="btn btn-success mr-2">Submit</button>
+
+                
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
